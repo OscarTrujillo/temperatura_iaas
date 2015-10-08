@@ -1,0 +1,30 @@
+{
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "latest",
+    "chai": "^3.3.0",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-util": "^3.0.6"
+  },
+  "name": "conversor_temp",
+  "version": "0.0.0",
+  "description": "ULL ETSII practica 2 STW",
+  "main": "temperature.js",
+  "scripts": {
+    "test": "open tests/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OscarTrujillo/conversor_temp.git"
+  },
+  "keywords": [
+    "temperature"
+  ],
+  "author": "Oscar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OscarTrujillo/conversor_temp/issues"
+  },
+  "homepage": "https://github.com/OscarTrujillo/conversor_temp"
+}
