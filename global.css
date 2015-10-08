@@ -15,10 +15,12 @@ body
 
 h1 {
     font-weight: normal;
-    font-family: "Brush Script MT", cursive;
-    background: #3C5681;
+    font-family: "sans-serif", cursive;
+    background: white;
     padding: 5px 15px;
-    color: white;
+    color: blue;
     display:inline-block;
     border-radius: 10px 10px 10px 10px;
+    position: relative;
+    left: 50%;
 }
