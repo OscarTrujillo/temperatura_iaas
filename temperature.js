@@ -1,6 +1,19 @@
 "use strict"; // Use ECMAScript 5 strict mode in browsers that support it
+function Media(num,cad) {
+  
+   this.numero=num;
+   this.cadena=cad;
+
+}
+
+function Temperatura (num, cad) {
+   Media.call(num, cad);
+}
+
+
+
 function calculate() {
-  var result;
+
   var temp = original.value;
   //var regexp = /([-+]?\d+(?:\.\d*)?)\s*([fFcC])/;
   var regexp = /([+-]?\d+(?:\.\d*)?(?:\s*[e]\d+)?)\s*([fFcC])/;
@@ -8,9 +21,13 @@ function calculate() {
   var m = temp.match(regexp);
   
   if (m) {
+    
+    var result;
     var num = m[1]; 
     var type = m[2];
-    num = parseFloat(num);
+
+   
+   var num = parseFloat(num);
     if (type == 'c' || type == 'C') {
       result = (num * 9/5)+32;
       result = result.toFixed(1)+" Farenheit"
