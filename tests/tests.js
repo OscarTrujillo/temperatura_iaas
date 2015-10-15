@@ -1,33 +1,16 @@
-var assert = chai.assert;
+var expect = chai.expect;
 
-suite('temperature', function() {
-    test('32F = 0C', function() {
-        original.value = "32F";
-        calculate();
-        assert.deepEqual(converted.innerHTML, "0.0 Celsius");
+describe("Tests", function() {
+
+    it("8c", function() {
+        var a = new Temperatura(8,"c");
+        expect(a.number).to.equal(8);
+        expect(a.type).to.equal("c");
     });
-    test('45C = 113.0 Farenheit', function() {
-        original.value = "45C";
-        calculate();
-        assert.deepEqual(converted.innerHTML, "113.0 Farenheit");
+    it("6f", function() {
+        var temp = new Temperatura(6,"f");
+        expect(a.number).to.equal(6);
+        expect(a.type).to.equal("f");
     });
-    test('5X = error', function() {
-        original.value = "5X";
-        calculate();
-        assert.match(converted.innerHTML, /ERROR/);
-    });
-    
-    
-    test('32c = 89.6 Farenheit', function() {
-        original.value = "32c";
-        calculate();
-        assert.deepEqual(converted.innerHTML, "89.6 Farenheit");
-    });
-    test('68f = 20.0 Celsius', function() {
-        original.value = "68F";
-        calculate();
-        assert.deepEqual(converted.innerHTML, "20.0 Celsius");
-    });
-    
-    
+
 });
