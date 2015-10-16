@@ -14,9 +14,8 @@ describe("Tests", function() {
     });
     
     it("result", function() {
-        var a = new Temperatura(6,"f");
-        expect(a.getn()).to.equal(6);
-        expect(a.getc()).to.equal("f");
+        var a = new Temperatura(32e2,"f");
+        expect(a.f2c()).to.equal("1760.0 Celsius");
     });
 
 });
