@@ -1,5 +1,5 @@
 "use strict"; // Use ECMAScript 5 strict mode in browsers that support it
-function Media(num,cad) {
+function Medida(num,cad) {
   
    var numero=num;
    var cadena=cad;
@@ -13,25 +13,26 @@ function Media(num,cad) {
 }
 
 function Temperatura (num, cad) {
-    Media.call(this, num, cad);
+    Medida.call(this, num, cad);
 
     var result;
+    var number = parseFloat(this.getn());
     
    ///
-   this.c2f=function(number){
+   this.c2f=function(){
       result = (number * 9/5)+32;
       result = result.toFixed(1)+" Farenheit"
+      return result
     }
    
-    this.f2c=function(number){
+    this.f2c=function(){
       result = (number - 32)*5/9;
       result = result.toFixed(1)+" Celsius"
+      return result
     }
     
-    this.getresult =function(){
-    return result
-  }
    ///
+
 }
 
 
@@ -48,22 +49,23 @@ function calculate() {
     
     var num = m[1]; 
     var type = m[2];
-    
-      Temperatura.prototype = new Media;
-      a = new Temperatura(num,type);
+    var resultado;
       
-      var type= a.getc();
-      var number = parseFloat(this.getn());
+      Temperatura.prototype = new Medida;
+            
+      var a = new Temperatura(num,type);
+
       
       ///
           if (type == 'c' || type == 'C') {
-              a.c2f(number);
+              resultado=a.c2f();
           }
           else{
-            a.f2c(number);
+            resultado=a.f2c();
+              
           }
-   
-  converted.innerHTML = a.getresult();
+   converted.innerHTML = resultado;
+
   }
   else {
     converted.innerHTML = "ERROR! Try something like '-4.2C' instead";
