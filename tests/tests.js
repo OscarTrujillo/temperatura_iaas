@@ -17,5 +17,10 @@ describe("Tests", function() {
         var a = new Temperatura(32e2,"f");
         expect(a.f2c()).to.equal("1760.0 Celsius");
     });
+    it("result", function() {
+        var a = new Temperatura(32e2,"c");
+        expect(a.c2f()).to.equal("5792.0 Farenheit");
+    });
+
 
 });
