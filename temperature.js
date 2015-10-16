@@ -14,20 +14,23 @@ function Media(num,cad) {
 
 function Temperatura (num, cad) {
     Media.call(this, num, cad);
-    var type= this.getc();
+
     var result;
     
    ///
-    var number = parseFloat(this.getn());
-    if (type == 'c' || type == 'C') {
+   this.c2f=function(number){
       result = (number * 9/5)+32;
       result = result.toFixed(1)+" Farenheit"
     }
-    else {
+   
+    this.f2c=function(number){
       result = (number - 32)*5/9;
       result = result.toFixed(1)+" Celsius"
     }
-    converted.innerHTML = result;
+    
+    this.getresult =function(){
+    return cadena
+  }
    ///
 }
 
@@ -48,8 +51,19 @@ function calculate() {
     
       Temperatura.prototype = new Media;
       a = new Temperatura(num,type);
+      
+      var type= a.getc();
+      var number = parseFloat(this.getn());
+      
+      ///
+          if (type == 'c' || type == 'C') {
+              a.c2f(number);
+          }
+          else{
+            a.f2c(number);
+          }
    
-  
+  converted.innerHTML = a.getresult();
   }
   else {
     converted.innerHTML = "ERROR! Try something like '-4.2C' instead";
