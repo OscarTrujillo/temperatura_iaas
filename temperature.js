@@ -29,7 +29,7 @@ function Temperatura (num, cad) {
     }
     
     this.getresult =function(){
-    return cadena
+    return result
   }
    ///
 }
