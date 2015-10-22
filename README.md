@@ -10,4 +10,5 @@ mi git page: http://oscartrujillo.github.io
 tests: http://oscartrujillo.github.io/conversor_temp/tests/
 
 
-https://travis-ci.org/OscarTrujillo/conversor_temp_3.svg
+[![Build Status](https://travis-ci.org/OscarTrujillo/conversor_temp_3.svg?branch=gh-pages)](https://travis-ci.org/OscarTrujillo/conversor_temp_3)
+
