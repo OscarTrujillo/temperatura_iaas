@@ -15,7 +15,7 @@
     "url": "git://github.com/crguezl/mocha-chai-sinon--example.git"
   },
   "devDependencies": {
-    "karma": "*",
+    "karma": "^0.13.12",
     "mocha": "*",
     "minimax": "*",
     "karma-mocha": "*",
