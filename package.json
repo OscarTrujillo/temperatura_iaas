@@ -1,25 +1,36 @@
 {
-  "dependencies": {},
-  "devDependencies": {
-    "mocha": "latest",
-    "chai": "^3.3.0",
-    "gulp": "^3.9.0",
-    "gulp-concat": "^2.6.0",
-    "gulp-util": "^3.0.6"
-  },
-  "name": "conversor_temp",
-  "version": "0.0.0",
-  "description": "ULL ETSII practica 2 STW",
-  "main": "temperature.js",
+  "name": "mocha-chai-sinon",
+  "version": "0.0.1",
+  "description": "See the tutorial at: https://nicolas.perriault.net/code/2013/testing-frontend-javascript-code-using-mocha-chai-and-sinon/",
+  "main": "cow.js",
   "scripts": {
-    "test": "open tests/index.html"
+    "test": "./node_modules/karma/bin/karma start --single-run",
+    "testf": "open test.html",
+    "chai": "curl https://raw.githubusercontent.com/chaijs/chai/master/chai.js -o vendor/chai.js",
+    "sinon": "curl http://sinonjs.org/releases/sinon-1.12.2.js -o vendor/sinon-1.12.2.js",
+    "karma": "node_modules/karma/bin/karma start"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/OscarTrujillo/conversor_temp.git"
+    "url": "git://github.com/crguezl/mocha-chai-sinon--example.git"
+  },
+  "devDependencies": {
+    "karma": "*",
+    "mocha": "*",
+    "minimax": "*",
+    "karma-mocha": "*",
+    "karma-chai": "*",
+    "karma-html2js-preprocessor": "*",
+    "karma-firefox-launcher": "*",
+    "optimist": "*",
+    "chai": "~2.0.0"
   },
   "keywords": [
-    "temperature"
+    "mocha",
+    "chai",
+    "sinon",
+    "testing",
+    "javascript"
   ],
   "author": "Oscar",
   "license": "ISC",

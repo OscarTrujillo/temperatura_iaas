@@ -17,20 +17,32 @@ function Temperatura (num, cad) {
 
     var result;
     var number = parseFloat(this.getn());
-    
+  
    ///
-   this.c2f=function(){
+   this.cambio=function(){
+     /*
       result = (number * 9/5)+32;
       result = result.toFixed(1)+" Farenheit"
       return result
-    }
-   
+      */
+      
+      var res=0;
+      var myWorker=new Worker("worker.js"); 
+      myWorker.postMessage([num, cad]);
+      
+      myWorker.onmessage=function(e){
+        alert(e.data);
+      }
+      return res;
+   }
+
+    /* 
     this.f2c=function(){
       result = (number - 32)*5/9;
       result = result.toFixed(1)+" Celsius"
       return result
     }
-    
+    */
    ///
 
 }
@@ -55,15 +67,9 @@ function calculate() {
             
       var a = new Temperatura(num,type);
 
-      
-      ///
-          if (type == 'c' || type == 'C') {
-              resultado=a.c2f();
-          }
-          else{
-            resultado=a.f2c();
+            resultado=a.cambio();
               
-          }
+          
    converted.innerHTML = resultado;
 
   }
