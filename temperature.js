@@ -20,8 +20,7 @@ function Temperatura (num, cad) {
   
 
    this.cambio=function(){
-
-      
+  
       var res=0;
       var myWorker=new Worker("worker.js"); 
       myWorker.postMessage([num, cad]);
@@ -31,10 +30,7 @@ function Temperatura (num, cad) {
       }
       return res;
    }
-
-
 }
-
 
 
 function calculate() {
