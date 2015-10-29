@@ -20,9 +20,11 @@ http://iaas.ull.es/ovirt-engine/
 Nos loguearemos con nuestro alu0100... y la respectiva contraseña y ya estaremos dentro del sistema.
 
 Una vez dentro nos encontraremos con una máquina linux y lo que deberemos hacer es configurar el visor VNC como muestra la siguiente imagen:
+
 ![Sin titulo](imagen/foto1.png)
 
 Y estamos listos para usar nuestra máquina, la inciamos y dentro nos loguearemos con:
+
 +Usuario: usuario
 +Contraseña: usuario
 
@@ -30,16 +32,20 @@ El sistema atomáticamente te pedirá que ingreses una nueva contraseña persona
 Una vez introducida ya estamos dentro.
 
 Ahora lo aconsejable es seguir usando nuestra máquina desde una terminal de nuestra máquina física para más comodidad. 
+
     $ ssh usuario@"DIRECCIÓN_IP de la máquina"
 
 El siguiente paso será instalar npm y nodejs
+
     $ sudo apt-get install npm
     $ sudo apt-get install nodejs
   
 Ya estamos listos para clonar nuestro repositorio. 
+
     $ git clone <URL>
 
 Instalamos dependencias:
+
     & npm install
 
 Una vez lo tengamos listo modificaremos la siguiente línea del código de nuestro *static_server.js* :
@@ -47,9 +53,11 @@ Una vez lo tengamos listo modificaremos la siguiente línea del código de nuest
     console.log("Visit http://<DIRECCIÓN_IP>:8080/index.html")
 
 Y ejecutamos:
+
     $ sudo nodejs static_server.js
     
 Ya tendremos nuestra aplicación desplegada en IASS, para comprobarlo entramos a:
+
     http://"DIECCIÓN_IP":8080/index.html
 
 
