@@ -1,13 +1,14 @@
-# conversor_temp
-Conversor de temperaturas hecho con javascript
+# Conversor de temperatura desplegado en IAAS
+Conversor de temperaturas hecho con javascript como práctica para la asignatura de Sistemas y Tecnologías Web de Ingeniería Informática en la Universidad de La Laguna
 
-Repo: https://github.com/OscarTrujillo/conversor_temp_3
 
-git page de la tarea 3: http://oscartrujillo.github.io/conversor_temp_3/
+Repo: https://github.com/OscarTrujillo/temperatura_iaas
 
-mi git page: http://oscartrujillo.github.io
+Git page de la tarea: http://oscartrujillo.github.io/temperatura_iaas/
 
-tests: http://oscartrujillo.github.io/conversor_temp/tests/
+Mi git page: http://oscartrujillo.github.io
+
+Página desplegada en IAAS: http://10.6.128.82:8080/index.html
 
 
 [![Build Status](https://travis-ci.org/OscarTrujillo/conversor_temp_3.svg?branch=gh-pages)](https://travis-ci.org/OscarTrujillo/conversor_temp_3)
