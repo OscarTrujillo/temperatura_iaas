@@ -13,6 +13,8 @@ Mi git page: http://oscartrujillo.github.io
 
 Página desplegada en IAAS: http://10.6.128.82:8080/index.html
 
+Enlace a las pruebas: http://oscartrujillo.github.io/temperatura_iaas/tests/test_blanket
+
 Travis: [![Build Status](https://travis-ci.org/OscarTrujillo/temperatura_iaas.svg)](https://travis-ci.org/OscarTrujillo/temperatura_iaas)
 
 ##Tutorial:
