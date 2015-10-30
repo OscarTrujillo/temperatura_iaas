@@ -4,7 +4,7 @@ Conversor de temperaturas hecho con javascript como práctica para la asignatura
 ###La práctica consiste en:
 Siguiendo las instrucciones en el repositorio despliegue la práctica anterior Karma, Travis y Web Workers en su máquina virtual del servicio iaas.ull.es. Si no ha usado Sinon.JS en la práctica anterior añada pruebas de mocking con Sinon.JS. Añada en el README.md un pequeño tutorial de como usar y desplegar una aplicación web en iaas.ull.es.
 
-###Enlaces de interes:
+###Enlaces de interes: 
 Repo: https://github.com/OscarTrujillo/temperatura_iaas
 
 Git page de la tarea: http://oscartrujillo.github.io/temperatura_iaas/
@@ -12,6 +12,8 @@ Git page de la tarea: http://oscartrujillo.github.io/temperatura_iaas/
 Mi git page: http://oscartrujillo.github.io
 
 Página desplegada en IAAS: http://10.6.128.82:8080/index.html
+
+Travis: [![Build Status](https://travis-ci.org/OscarTrujillo/temperatura_iaas.svg)](https://travis-ci.org/OscarTrujillo/temperatura_iaas)
 
 ##Tutorial:
 Lo primero que debemos de hacer es entrar al sistema IAAS desde su página web:
